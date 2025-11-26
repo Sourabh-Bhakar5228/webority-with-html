@@ -67,6 +67,7 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Caveat:wght@600&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="style.css" />
 
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -89,20 +90,11 @@
   <body class="bg-white">
     <!-- ================= NAVBAR ================= -->
     <nav
-      class="w-full px-4 md:px-6 py-4 flex items-center justify-evenly gap-10 md:gap-40 lg:gap-64 xl:gap-80 bg-white shadow-md"
+      class="w-full px-4 md:px-6 py-4 flex items-center gap-[900px] justify-evenly bg-white"
     >
       <!-- Logo -->
-      <div class="flex flex-col items-start leading-tight">
-        <span
-          class="text-2xl md:text-3xl font-semibold text-blue-500 tracking-wide"
-        >
-          what
-        </span>
-        <span
-          class="text-2xl md:text-3xl font-semibold text-black -mt-1 tracking-wide"
-        >
-          nxt
-        </span>
+      <div class="flex items-center">
+        <img src="img/logo.png" alt="logo" class="h-19 w-30 object-contain" />
       </div>
 
       <!-- Button -->
@@ -115,76 +107,94 @@
     </nav>
 
     <!-- ================= HERO SECTION ================= -->
-    <section class="relative w-full py-20 overflow-hidden bg-white">
-      <!-- Background Wrapper -->
-      <div class="absolute inset-0 flex justify-center pointer-events-none">
+    <section
+      class="hero-section relative w-[1300px] py-20 overflow-hidden rounded-3xl -lg shadow-md mx-auto my-10"
+    >
+      <!-- Background Blur Shapes -->
+      <div class="absolute inset-0 pointer-events-none">
         <div
-          class="w-full h-[520px] mt-20 rounded-[40px] bg-white relative overflow-hidden"
-        >
-          <!-- big blur blue -->
-          <div
-            class="absolute left-[50%] top-[90%] -translate-x-1/2 w-[600px] h-[400px] bg-[#33BDF8] opacity-40 blur-[150px]"
-          ></div>
-
-          <!-- purple blur -->
-          <div
-            class="absolute left-[10%] top-[75%] w-[400px] h-[300px] bg-[#6943FF] opacity-60 blur-[120px]"
-          ></div>
-
-          <!-- sky blue blur -->
-          <div
-            class="absolute right-[10%] top-[70%] w-[350px] h-[300px] bg-[#5FA8FF] opacity-60 blur-[100px]"
-          ></div>
-
-          <!-- gradient blur -->
-          <div
-            class="absolute left-[20%] top-[50%] w-[500px] h-[350px] bg-gradient-to-br from-[#6943FF] via-[#5FA8FF] to-[#6FE5FF] opacity-40 blur-[120px]"
-          ></div>
-        </div>
+          class="absolute left-1/2 top-[85%] -translate-x-1/2 w-[650px] h-[420px] bg-blue-400 blur-shape"
+        ></div>
+        <div
+          class="absolute left-[8%] top-[70%] w-[420px] h-[300px] bg-purple-600 blur-shape"
+        ></div>
+        <div
+          class="absolute right-[8%] top-[65%] w-[380px] h-[300px] bg-blue-500 blur-shape"
+        ></div>
       </div>
 
-      <!-- Foreground Content -->
+      <!-- Main Content -->
       <div
-        class="relative max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-10 items-center"
+        class="relative max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 items-center gap-12"
       >
-        <!-- Left Text -->
+        <!-- LEFT CONTENT -->
         <div class="space-y-6">
-          <p class="text-sm tracking-widest text-purple-500 font-medium">
+          <p
+            class="text-xs md:text-sm tracking-widest text-purple-600 font-semibold"
+          >
             BETTER LEARNING FUTURE WITH US
           </p>
 
-          <h1 class="text-4xl md:text-5xl font-extrabold leading-tight">
-            Your <span class="text-blue-600">One-Stop</span> Solution for all
-            Streams
+          <h1 class="text-4xl md:text-5xl font-extrabold leading-snug">
+            Your
+            <span class="text-blue-600"
+              >One-Stop <br />
+              Solution</span
+            >
+            for all Streams
           </h1>
 
-          <h2 class="text-2xl md:text-3xl font-bold">
-            To crack <span class="text-purple-600">CUET</span>
+          <h2
+            class="text-2xl md:text-3xl font-bold flex flex-wrap items-center gap-2"
+          >
+            To crack
+            <span class="text-purple-600 relative">
+              CUET
+              <!-- underline -->
+              <span class="absolute -bottom-7 left-0 w-full">
+                <svg width="160" height="26" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M2,14 Q80,2 154,14"
+                    stroke="#3498fd"
+                    stroke-width="8"
+                    fill="none"
+                  />
+                  <path
+                    d="M54,21 Q112,8 150,18"
+                    stroke="#3498fd"
+                    stroke-width="4"
+                    fill="none"
+                  />
+                </svg>
+              </span>
+            </span>
             <span class="bg-yellow-300 px-2 py-1 rounded-md">after +2</span>
           </h2>
 
-          <p class="text-gray-600 max-w-md">
-            A platform where students can connect through community, prepare for
-            CUET exam, and explore colleges for admission.
+          <p class="text-gray-600 max-w-xl leading-relaxed">
+            A platform where students can connect through community. <br />
+            prepare for CUET exam, and explore colleges for admission.
           </p>
 
           <button
-            id="downloadBtn2"
-            class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-medium flex items-center gap-2 w-fit shadow"
+            class="bg-blue-600 hover:bg-blue-700 transition text-white px-6 py-3 rounded-lg font-medium flex items-center gap-2 w-fit shadow-md"
           >
-            Download App →
+            Download App
+            <span>→</span>
           </button>
         </div>
 
-        <!-- Right Image -->
-        <div
-          class="relative w-[300px] md:w-[380px] h-[300px] md:h-[380px] mx-auto rounded-full overflow-hidden border-4 border-white shadow-xl"
-        >
-          <img
-            src="img/home_image.jpg"
-            alt="student"
-            class="object-cover w-full h-full"
-          />
+        <!-- RIGHT IMAGE -->
+        <div class="relative flex justify-center">
+          <div
+            class="w-[300px] md:w-[400px] h-[300px] md:h-[400px] rounded-full border-4 border-white shadow-xl overflow-hidden"
+          >
+            <img
+              src="img/home_image.jpg"
+              alt="student image"
+              class="object-cover w-full h-full"
+            />
+          </div>
         </div>
       </div>
     </section>
@@ -201,21 +211,21 @@
             <img
               src="https://images.unsplash.com/photo-1544717305-2782549b5136?w=600&auto=format&fit=crop&q=60"
               alt="students"
-              class="rounded-2xl shadow w-28 h-40 md:w-44 md:h-60 object-cover"
+              class="rounded-2xl shadow w-28 h-60 md:w-44 md:h-[23rem] object-cover"
             />
 
             <!-- Middle bigger & shifted up -->
             <img
               src="https://plus.unsplash.com/premium_photo-1714397546752-a34ec8d22142?w=600&auto=format&fit=crop&q=60"
               alt="group"
-              class="rounded-2xl shadow w-32 h-48 md:w-48 md:h-72 object-cover -translate-y-3 md:-translate-y-5"
+              class="rounded-2xl shadow w-32 h-48 md:w-48 md:h-[22rem] object-cover -translate-y-3 md:-translate-y-10"
             />
 
             <!-- Third Image -->
             <img
               src="https://images.unsplash.com/photo-1567168544813-cc03465b4fa8?w=600&auto=format&fit=crop&q=60"
               alt="girl"
-              class="rounded-2xl shadow w-28 h-40 md:w-44 md:h-60 object-cover"
+              class="rounded-2xl shadow w-28 h-60 md:w-44 md:h-[23rem] object-cover"
             />
           </div>
         </div>
@@ -229,7 +239,8 @@
           </h2>
 
           <p class="text-base md:text-lg font-semibold text-gray-700">
-            Feeling lost on your path to college? Whatnxt is here!
+            Feeling lost on your path to college? Whatnxt is <br />
+            here!
           </p>
 
           <p class="text-gray-600 leading-relaxed text-sm md:text-base">
@@ -251,7 +262,7 @@
     </section>
 
     <!-- ================= WHAT WE OFFER SECTION ================= -->
-    <section class="w-full py-20 bg-white">
+    <section class="w-full py-20 bg-white dot-backgrounds">
       <div class="max-w-7xl mx-auto px-6 text-center">
         <!-- Section Heading -->
         <h2 class="text-4xl font-extrabold">
@@ -348,7 +359,7 @@
     <!-- ==================================== BRIGHT COMMUNITIES SECTION =================  -->
     <section class="w-full bg-white">
       <!-- Top Section -->
-      <div class="grid grid-cols-1 lg:grid-cols-2">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-2">
         <!-- Left Large Image -->
         <div class="grid grid-cols-1">
           <div class="relative w-full h-[580px]">
@@ -362,7 +373,7 @@
 
         <!-- Right Content -->
         <div
-          class="bg-[#0D1B2A] text-white flex flex-col justify-center p-10 space-y-6"
+          class="bg-[#0D1B2A] text-white flex flex-col justify-center p-10 space-y-6 dot-background"
         >
           <h3 class="text-sm text-purple-300 tracking-wider font-semibold">
             BRIGHT COMMUNITIES
@@ -430,28 +441,40 @@
       </div>
 
       <!-- Bottom Image Grid -->
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-2 mt-2">
-        <div class="relative w-full h-[250px]">
+      <div class="grid grid-cols-1 md:grid-cols-6 gap-2 mt-2">
+        <!-- BIG -->
+        <div class="relative h-[250px] md:col-span-2">
           <img
             src="https://plus.unsplash.com/premium_photo-1691844988214-a1ec03082354?w=600&auto=format&fit=crop&q=60"
+            class="object-cover w-full h-full"
             alt="Student on phone"
-            class="object-cover w-full h-full"
           />
         </div>
 
-        <div class="relative w-full h-[250px]">
+        <!-- SMALL -->
+        <div class="relative h-[250px] md:col-span-1">
           <img
-            src="https://images.unsplash.com/photo-1549057446-9f5c6ac91a04?w=600&auto=format&fit=crop&q=60"
+            src="https://plus.unsplash.com/premium_photo-1681248156636-6d9445703b80?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y29sbGFnZSUyMHN0dWRlbnR8ZW58MHx8MHx8fDA%3D"
+            class="object-cover w-full h-full"
             alt="Student writing"
-            class="object-cover w-full h-full"
           />
         </div>
 
-        <div class="relative w-full h-[250px]">
+        <!-- BIG -->
+        <div class="relative h-[250px] md:col-span-2">
           <img
-            src="https://plus.unsplash.com/premium_photo-1691849271949-cb30187a80c3?w=600&auto=format&fit=crop&q=60"
-            alt="Friends smiling"
+            src="https://images.unsplash.com/photo-1741636174602-252cd7bb233c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGNvbGxhZ2UlMjBzdHVkZW50fGVufDB8fDB8fHww"
             class="object-cover w-full h-full"
+            alt="Friends smiling"
+          />
+        </div>
+
+        <!-- SMALL -->
+        <div class="relative h-[250px] md:col-span-1">
+          <img
+            src="https://plus.unsplash.com/premium_photo-1681489639674-f4139b69e90e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGNvbGxhZ2UlMjBzdHVkZW50fGVufDB8fDB8fHww"
+            class="object-cover w-full h-full"
+            alt="Student writing"
           />
         </div>
       </div>
@@ -464,7 +487,7 @@
       <!-- ---------------- TOP SECTION ---------------- -->
       <div class="relative flex flex-col items-center mb-20">
         <!-- Planet Icon -->
-        <div class="absolute -left-24 -top-6 opacity-80">
+        <div class="absolute left-[-24rem] top-2 opacity-50">
           <img
             src="https://cdn-icons-png.flaticon.com/128/3336/3336008.png"
             width="110"
@@ -724,10 +747,10 @@
       </div>
 
       <div
-        class="flex flex-col lg:flex-row items-center justify-center gap-12 lg:gap-20 w-full"
+        class="flex flex-col lg:flex-row items-center justify-center gap-12 lg:gap-20 w-full relative"
       >
         <!-- LEFT LIST -->
-        <div class="space-y-6 text-base md:text-[18px] max-w-lg w-full">
+        <div class="space-y-8 text-base md:text-[18px] max-w-lg w-full">
           <!-- ROW -->
           <div class="flex items-start gap-4">
             <div class="grid grid-cols-2 gap-[3px] mt-1">
@@ -806,6 +829,20 @@
               class="w-full h-full object-cover"
             />
           </div>
+
+          <!-- SVG ARROW -->
+          <svg
+            class="absolute -right-10 -top-6 hidden lg:block"
+            width="90"
+            height="90"
+            fill="none"
+            stroke="#A78BFA"
+            stroke-width="3"
+            viewBox="0 0 100 100"
+          >
+            <path d="M10 60 C40 10, 80 10, 90 40" stroke-linecap="round" />
+            <path d="M85 35 L90 40 L95 35" stroke-linecap="round" />
+          </svg>
         </div>
       </div>
     </section>
@@ -998,9 +1035,14 @@
         ></div>
       </div>
 
+      <!-- CENTERED LOGO -->
+      <div class="relative z-10 flex justify-center pt-20">
+        <img src="img/logo.png" alt="logo image" class="w-30 md:w-42" />
+      </div>
+
       <!-- FOREGROUND CONTENT -->
       <div
-        class="relative z-10 flex flex-col items-center pt-20 pb-10 text-center"
+        class="relative z-10 flex flex-col items-center text-center mt-8 pb-10 px-4"
       >
         <h2 class="text-3xl font-semibold text-gray-900 max-w-xl">
           Start your CUET Preparation Today
@@ -1023,14 +1065,21 @@
           />
         </div>
 
-        <p class="mt-12 text-gray-600 text-sm">
-          EDUSPHERE TECHNOLOGIES LLP ©2024. All Rights Reserved.
-        </p>
+        <!-- FOOTER LINKS -->
+        <div
+          class="flex flex-col md:flex-row justify-between items-center mt-12 text-gray-600 text-sm gap-4 w-full max-w-7xl"
+        >
+          <!-- Left side -->
+          <p class="text-blue-600 text-center md:text-left">
+            EDUSPHERE TECHNOLOGIES LLP ©2024. All Rights Reserved.
+          </p>
 
-        <div class="flex justify-center gap-8 mt-4 text-gray-700 text-sm">
-          <a href="#" class="hover:text-blue-600">Terms & Conditions</a>
-          <a href="#" class="hover:text-blue-600">Privacy Policy</a>
-          <a href="#" class="hover:text-blue-600">Cookies</a>
+          <!-- Right side -->
+          <div class="flex gap-8 text-gray-700 justify-center md:justify-end">
+            <a href="#" class="hover:text-blue-600">Terms & Conditions</a>
+            <a href="#" class="hover:text-blue-600">Privacy Policy</a>
+            <a href="#" class="hover:text-blue-600">Cookies</a>
+          </div>
         </div>
       </div>
     </footer>

@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap");
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.hero-section {
+  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+}
+
+.blur-shape {
+  filter: blur(100px);
+  opacity: 0.6;
+}
+
+.subject-card {
+  box-shadow: 0px 0px 35px rgba(227, 236, 255, 0.8);
+}
+
+.feature-dot-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3px;
+}
+.dot-background {
+  background-image: radial-gradient(#ffffff30 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+.dot-backgrounds {
+  background-image: radial-gradient(#1c1b1b30 1px, transparent 1px);
+  background-size: 20px 20px;
+}
