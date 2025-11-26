@@ -90,11 +90,11 @@
   <body class="bg-white">
     <!-- ================= NAVBAR ================= -->
     <nav
-      class="w-full px-4 md:px-6 py-4 flex items-center gap-[900px] justify-evenly bg-white"
+      class="w-full px-4 md:px-6 py-4 flex items-center justify-between bg-white"
     >
       <!-- Logo -->
       <div class="flex items-center">
-        <img src="img/logo.png" alt="logo" class="h-19 w-30 object-contain" />
+        <img src="img/logo.png" alt="logo" class="h-18 w-30 object-contain" />
       </div>
 
       <!-- Button -->
@@ -108,51 +108,58 @@
 
     <!-- ================= HERO SECTION ================= -->
     <section
-      class="hero-section relative w-[1300px] py-12 overflow-hidden rounded-3xl -lg shadow-md mx-auto my-10"
+      class="hero-section relative w-full max-w-[1300px] py-12 overflow-hidden rounded-3xl shadow-md mx-auto my-10 px-4 md:px-6"
     >
       <!-- Background Blur Shapes -->
       <div class="absolute inset-0 pointer-events-none">
         <div
-          class="absolute left-1/2 top-[85%] -translate-x-1/2 w-[650px] h-[420px] bg-blue-400 blur-shape"
+          class="absolute left-1/2 top-[85%] -translate-x-1/2 w-[60%] md:w-[650px] h-[250px] md:h-[420px] bg-blue-400 blur-3xl rounded-full"
         ></div>
         <div
-          class="absolute left-[8%] top-[70%] w-[420px] h-[300px] bg-purple-600 blur-shape"
+          class="absolute left-[5%] top-[70%] w-[35%] md:w-[420px] h-[180px] md:h-[300px] bg-purple-600 blur-3xl rounded-full"
         ></div>
         <div
-          class="absolute right-[8%] top-[65%] w-[380px] h-[300px] bg-blue-500 blur-shape"
+          class="absolute right-[5%] top-[65%] w-[30%] md:w-[380px] h-[180px] md:h-[300px] bg-blue-500 blur-3xl rounded-full"
         ></div>
       </div>
 
       <!-- Main Content -->
       <div
-        class="relative max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 items-center gap-12"
+        class="relative max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-8 md:gap-12"
       >
         <!-- LEFT CONTENT -->
-        <div class="space-y-6">
+        <div class="space-y-4 md:space-y-6 text-center md:text-left">
           <p
             class="text-xs md:text-sm tracking-widest text-purple-600 font-semibold"
           >
             BETTER LEARNING FUTURE WITH US
           </p>
 
-          <h1 class="text-4xl md:text-5xl font-extrabold leading-snug">
+          <h1
+            class="text-3xl sm:text-4xl md:text-5xl font-extrabold leading-snug"
+          >
             Your
-            <span class="text-blue-600"
-              >One-Stop <br />
-              Solution</span
-            >
+            <span class="text-blue-600">
+              One-Stop <br />
+              Solution
+            </span>
             for all Streams
           </h1>
 
           <h2
-            class="text-2xl md:text-3xl font-bold flex flex-wrap items-center gap-2"
+            class="text-xl sm:text-2xl md:text-3xl font-bold flex flex-wrap justify-center md:justify-start items-center gap-2"
           >
             To crack
             <span class="text-purple-600 relative">
               CUET
               <!-- underline -->
-              <span class="absolute -bottom-7 left-0 w-full">
-                <svg width="160" height="26" xmlns="http://www.w3.org/2000/svg">
+              <span class="absolute -bottom-6 md:-bottom-7 left-0 w-full">
+                <svg
+                  width="120"
+                  height="20"
+                  viewBox="0 0 160 26"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
                   <path
                     d="M2,14 Q80,2 154,14"
                     stroke="#3498fd"
@@ -171,13 +178,13 @@
             <span class="bg-yellow-300 px-2 py-1 rounded-md">after +2</span>
           </h2>
 
-          <p class="text-gray-600 max-w-xl leading-relaxed">
+          <p class="text-gray-600 max-w-full md:max-w-xl leading-relaxed">
             A platform where students can connect through community. <br />
-            prepare for CUET exam, and explore colleges for admission.
+            Prepare for CUET exam, and explore colleges for admission.
           </p>
 
           <button
-            class="bg-blue-600 hover:bg-blue-700 transition text-white px-6 py-3 rounded-lg font-medium flex items-center gap-2 w-fit shadow-md"
+            class="bg-blue-600 hover:bg-blue-700 transition text-white px-6 py-3 rounded-lg font-medium flex items-center gap-2 w-fit mx-auto md:mx-0 shadow-md"
           >
             Download App
             <span>→</span>
@@ -185,17 +192,17 @@
         </div>
 
         <!-- RIGHT IMAGE -->
-        <div class="relative flex justify-center">
+        <div class="relative flex justify-center mt-8 md:mt-0">
           <!-- Background Circle -->
           <div
-            class="absolute w-[325px] h-[325px] bg-white rounded-full top-1/2 -translate-y-1/2 z-0"
+            class="absolute w-[200px] sm:w-[250px] md:w-[325px] h-[200px] sm:h-[250px] md:h-[325px] bg-white rounded-full top-1/2 -translate-y-1/2 z-0"
           ></div>
 
-          <!-- Student Image (Bigger) -->
+          <!-- Student Image -->
           <img
             src="/img/home_image2.png"
             alt="student"
-            class="relative z-10 w-[350px] md:w-[450px] h-[350px] md:h-[450px]"
+            class="relative z-10 w-[250px] sm:w-[350px] md:w-[450px] h-[250px] sm:h-[350px] md:h-[450px] object-cover rounded-2xl"
           />
         </div>
       </div>
